@@ -1,0 +1,27 @@
+.questions{
+    padding: 0 47px 0 20px;
+    /*width: 460px;*/
+    /*height: 500px;*/
+    overflow: hidden;
+    /*float: right;*/
+}
+
+.questions h2{
+    padding: 50px 50px;
+    text-align: center;
+    font-size: 24px;
+    color: #333333;
+    font-weight: bold;
+}
+strong{
+    color: #333333;
+    font-weight: bold;
+    text-indent: 2em;
+    display: block;
+}
+.questions ol li{
+    color: #666666;
+    line-height: 1.5em;
+    text-indent: 2em;
+    margin-top: 12px;
+}

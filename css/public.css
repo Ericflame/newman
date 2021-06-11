@@ -1,0 +1,382 @@
+/*导航栏*/
+header {
+    width: 1200px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0 auto;
+    /*background-color: #D0D0D0;*/
+}
+
+header .logo {
+    width: 140px;
+    height: 40px;
+    margin: 20px 200px 0 0;
+    float: left;
+}
+
+header .nav {
+    overflow: hidden;
+    float: left;
+}
+
+header .nav li {
+    float: left;
+    font-size: 16px;
+    margin-right: 56px;
+}
+
+.nav-active,header .nav li:hover {
+    border-bottom: 4px solid #01a1ff;
+}
+
+header .nav li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.active {
+    color: #01a1ff!important;
+}
+
+header .nav li:hover a {
+    color: #01a1ff;
+}
+
+header .language {
+    float: right;
+}
+
+header .language li {
+    float: left;
+    width: 47px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid transparent;
+    text-align: center;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+header .language li:first-child {
+    border: 1px solid #ccc;
+}
+
+header .language li:hover {
+    border: 1px solid #ccc;
+}
+
+/*content-title*/
+.content-title{
+    padding:0 18px 10px 0;
+    border-bottom: 1px solid #D3D3D3;
+    overflow: hidden;
+    position: relative;
+}
+.about-content{
+
+    width: 952px;
+    float: left;
+}
+.content-title a{
+    text-decoration: none;
+}
+.content-title h3 span{
+    color: #666;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.content-title h3{
+
+    padding: 10px 8px 10px 7px ;
+    float: left;
+    margin-left: 28px;
+    font-size: 22px;
+    color: #0C0C0C;
+    border-left: 3px solid #01a1ff;
+}
+.content-title .crumbs-nav{
+    line-height: 50px;
+    font-size: 12px;
+    color: #999;
+    float: right;
+    bottom: 20px;
+    right: 18px;
+}
+.content-title .crumbs-nav a{
+    color: #999;
+}
+.content-title .crumbs-nav span{
+    color: #01a1ff;
+}
+/*侧边栏*/
+aside{
+    margin-right: 45px;
+    float: left;
+    width: 200px;
+    border:1px solid #01a1ff;
+}
+aside .aside_title{
+    background-color: #01a1ff;
+    padding: 30px 0 24px;
+    text-align: center;
+    color: #fff;
+}
+aside .title{
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 26px;
+}
+aside .title:after{
+    border-color: #fff;
+}
+aside p{
+    font-size: 14px;
+
+}
+aside .aside-nav li{
+    width: 172px;
+    text-align: center;
+    padding: 8px 0;
+    margin-bottom: 20px;
+}
+aside .aside-nav li:hover{
+    background-color: #01a1ff;
+    border-radius: 15px;
+}
+aside .aside-nav li a:hover{
+    color: #fff;
+}
+aside .aside-nav li:last-child{
+    margin-bottom: 0;
+}
+aside .aside-nav li:first-child{
+    background-color: #01a1ff;
+    border-radius: 15px;
+}
+aside .aside-nav li:first-child a{
+    color: #fff;
+}
+aside .aside-nav i {
+    font-weight: bold;
+    margin-right: 3px;
+}
+aside a{
+    text-decoration: none;
+    color: #666;
+}
+aside .aside-nav{
+    padding: 9px 14px 14px;
+    list-style: none;
+    font-size: 18px;
+}
+/*banner*/
+.banner-img{
+    width: 100%;
+    height: 400px;
+}
+.banner{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+.container-content{
+    width: 970px;
+    float: left;
+}
+.container{
+    width: 1218px;
+    margin: 60px auto 200px;
+    /*background-color: #f00;*/
+    height: 1400px;
+}
+.banner .imgs{
+    width: 1000%;
+    position: absolute;
+}
+.banner li{
+    float: left;
+}
+.banner img{
+    width: 100%;
+    height: 400px;
+}
+.prev, .next{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 184px;
+    z-index: 10;
+}
+.prev{
+    background: url("../img/index-xb2.png") no-repeat;
+    left: 40px;
+}
+.prev:hover{
+    background: url("../img/index-xb4.png") no-repeat;
+}
+.next{
+    background: url("../img/index-xb1.png") no-repeat;
+    right: 40px;
+}
+.next:hover{
+    background: url("../img/index-xb3.png") no-repeat;
+}
+.banner .count{
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    margin-left: -22.5px;
+    /*transform: translate(-50%,-50%);*/
+}
+
+.banner .count li{
+    float: left;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    opacity: .2;
+    filter: alpha(opacity=20);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.banner .count .on{
+    background-color:  #01a1ff;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+/*标题公共样式*/
+.title{
+    font: 34px "Franklin Gothic Medium";
+    text-transform: uppercase;/*字母全部大写*/
+    text-align: center;
+    position: relative;
+    margin-bottom: 44px;
+}
+.title:after{
+    content: '';
+    display: block;
+    width: 42px;
+    border-bottom: 4px solid #01a1ff;
+    position: absolute;
+    left: 50%;
+    margin-left: -21px;
+    bottom: -3px;
+}
+/*首页p样式*/
+.index-p{
+    width: 1200px;
+    font: 14px 微软雅黑;
+    color: #666;
+    padding: 0 70px;
+    line-height: 24px;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+/*footer*/
+footer{
+    width: 100%;
+    /*height: 300px;*/
+    background-color: #01a1ff;
+}
+.footer{
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-content{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+    overflow: hidden;
+}
+.footer-nav{
+    float: left;
+}
+footer dl{
+    float: left;
+    margin-right: 100px;
+}
+footer dl:last-child{
+    margin-right: 0;
+}
+footer dl dt{
+    font-size: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+}
+footer dl dd{
+    font-size: 12px;
+    margin-top: 20px;
+}
+.footer-concat{
+    float: right;
+}
+.footer-concat input, .footer-concat textarea{
+    outline: none;
+    border: 1px solid #fff;
+    background-color: #01a1ff;
+    color: #fff;
+}
+.footer-concat input{
+    width: 134px;
+    height: 30px;
+    padding: 0 5px;
+}
+.footer-concat input::-webkit-input-placeholder, .footer-concat textarea::-webkit-input-placeholder{
+    color: #fff;
+}
+.footer-concat input::-ms-input-placeholder ,.footer-concat textarea::-ms-input-placeholder{
+    color: #fff;
+}
+.footer-concat input:first-child{
+    margin-right: 17px;
+}
+.footer-concat textarea{
+    width: 302px;
+    height: 95px;
+    margin: 10px 0;
+    padding: 5px;
+}
+.footer-concat input[type=button]{
+    width: 110px;
+    height: 30px;
+}
+footer .copyright{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+
+.pages{
+    position: relative;
+    left: 287px;
+}
+.pages li{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    background-color: #e5e5e5;
+    text-align: center;
+    color: #999;
+}
+.pages li:first-child,.pages li:last-child{
+    width: 92px;
+}
+.pages li:nth-child(2),.pages li:hover{
+    background-color: #01a1ff;
+    color: #fff;
+}
